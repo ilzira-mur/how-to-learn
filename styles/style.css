@@ -1,25 +1,254 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.logo__place_header {
+  width: 183x;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  position: absolute;
+  order: 1;
+  top: 30px;
+  left: 64px;
+  }
+
+.header__title {
+  position: relative;
+  width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  left: 64px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+  display: inline-block;
+}
+
+.header__subtitle {
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+}
+
+.link{
+  color: blue;
+}
+
+.link::after {
+  content:'...';
+}
+
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+  max-width: 50%;
+}
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: blue;
+  top: 64px;
+  right: 0;
+  position: absolute;
+}
+
+.description{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px 0;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align:top;
+}
+
+.description p {
+  margin-top:0;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: blue;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__paragraph{
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.digits{
+  margin: 100px auto;
+  position: relative;
+}
+
+.section-title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.digits__table {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  width: 1100px;
+
+}
+
+.table__line {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.table__cell {
+  width: 250px;
+  text-align: left;
+  justify-content: space-around;
+  vertical-align: top;
+  min-height:5px;
+  margin-top: 60px;
+
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.feynman {
+  margin-bottom: 50px;
+  padding-top: 80px; 
+  background-color: #F2F2F2;
+  height: 790px;
+  background-image: url(../images/feynman.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  position: relative;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  width: 648px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  margin: 0  auto;
+  text-align: center;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  right: 48px;
+  color: black;
+}
+
+div {
+  border: 3px solid red;
 }
 
 /* и элемента с модификатором вида ключ-значение */
