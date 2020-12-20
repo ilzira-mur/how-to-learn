@@ -8,16 +8,16 @@
   <title>Научиться учиться</title>
   </head>
 <body>
-  <div class="page">
+  <div class="flex-row page">
     <header class="header">
       <div class="logo"><img class="logo__place_header" src="./images/logo_place_header.svg" alt="Лого"></div>
-      <h1 class="header__title">Научиться учиться</h1>
-      <p class="header__subtitle">Какие совеременные и эффективные подходы к обучению вы можете использовать
-          в своей жизни?<a href="#" class="link">Узнать</a></p>
-  <img class="header__main-illustration" src="./images/header-image.png" alt="Картинка">
-  <div class="header__square-pic"></div>
-</header>
-    <main class="flex-row content">
+      <div class="header__title">Научиться учиться</div>
+      <div class="header__subtitle">Какие совеременные и эффективные подходы к обучению вы можете использовать
+          в своей жизни?<a href="#" class="link">Узнать</a></div>
+       <div><img class="header__main-illustration" src="./images/header-image.png" alt="Картинка"></div>
+       <div class="header__square-pic"></div>
+    </header>
+    <main class="content">
       <section class="description">
         <div class="two-columns">
           <p class="two-columns__brief">Главные проблемы в обучении</p>
@@ -31,7 +31,7 @@
       </div>
       </section>
 
-      <section class="flex-row digits">
+      <section class="digits">
         <div class="section-title">Цифры и факты</div>
           <div class="section-subtitle">Про учёбу и мозг</div>
           <table class="table digits__table">
@@ -77,15 +77,85 @@
       </section>
 
       <section class="flex-row feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a class="link feynman__link " href="#">Подробнее</a>
+        <div class="feynman__title">Метод Фейнмана</div>
+        <div class="feynman__subtitle">Выучить и не забыть.</div>
+        <div class= "link feynman__link"><a href="#">Подробнее</a></div>
       </section>
 
       <section class="kaufman">
+        <div class="section-title">Принципы обучения</div>
+        <div class="section-subtitle">от Джоша Кауфмана</div>
+        <table class="table digits__table">
+          <tr class="table__line">
+            <th class="table__cell">
+              <div class="table__heading">1</div> 
+              <div class="table__text">Выберите привлекательный проект.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">2</div>
+              <div class="table__text">Сосредоточьтесь на каком-то одном навыке.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">3</div>
+              <div class="table__text">Определите целевой уровень мастерства.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">4</div>
+              <div class="table__text">Разбейте навык на элементы.</div>
+            <th class="table__cell">
+              <div class="table__heading">5</div>
+              <div class="table__text">Приготовьте всё необходимое для занятий.</div>            </th>
+            </tr>
+          <tr class="table__line">
+            <th class="table__cell">
+              <div class="table__heading">6</div>
+              <div class="table__text">Устраните препятствия для занятий.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">7</div>
+              <div class="table__text">Выделите специальное время для занятий.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">8</div>
+              <div class="table__text">Создайте быстрые петли обратной связи.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">9</div>
+              <div class="table__text">Занимайтесь по расписанию, короткими интенсивными интервалами.</div>
+            </th>
+            <th class="table__cell">
+              <div class="table__heading">10</div>
+              <div class="table__text">Уделяйте внимание количеству и скорости.</div>
+            </th>
+          </tr>        
+          </table>
+          <div class="triangle"></div>
       </section>
     </main>
+
     <footer class="footer">
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content-copyright">
+            <div class="logo logo_place_footer"></div>
+            <div class="footer__author">&copy 2020, ilzira</div>
+        </div>
+        <div class="footer__column footer__column_content-info">
+            <h3 class="footer__column-heading"> О Практикуме </h3>
+            <ul class="footer__column-links">
+                <li>Главная</li>
+                <li>Концепция</li>
+                <li>Наставники</li>
+            </ul>
+        </div>
+        <div class="footer__column footer__column_content-social">
+                <h3 class="footer__column-heading">Соцсети</h3>
+                <ul class="footer__column-links">
+                    <li><img class="footer__social-icons" src='./images/facebook_color_white.svg' alt='Facebook'>Facebook</li>
+                    <li><img class="footer__social-icons" src='./images/vk_color_white.svg' alt='ВКонтакте'>ВКонтакте</li>
+                    <li><img class="footer__social-icons" src='./images/instagram_color_white.svg' alt='Instagram'>Instagram</li>
+                    </ul>
+        </div>
+    </div>
 
     </footer>
   </div>

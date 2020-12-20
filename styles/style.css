@@ -6,6 +6,11 @@
   background-color: #f2f2f2;
 }
 
+.flex-row: {
+  display: flex;
+  display: inline-block;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -13,7 +18,6 @@
   display: flex;
   position: relative;
   margin-bottom: 100px;
-  overflow: hidden;
 }
 
 .logo {
@@ -21,6 +25,8 @@
   background-size: contain;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
+  weight: 183px;
+  height: 32px;
 }
 
 .logo__place_header {
@@ -33,7 +39,7 @@
   position: absolute;
   order: 1;
   top: 30px;
-  left: 64px;
+  padding-left: 64px;
   }
 
 .header__title {
@@ -41,7 +47,7 @@
   width: 730px;
   font-size: 102px;
   line-height: 96px;
-  left: 64px;
+  margin-left: 64px;
   font-weight: bold;
   margin-top: auto;
   margin-bottom: auto;
@@ -58,12 +64,15 @@
   width: 388px;
 }
 
-.link{
-  color: blue;
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+  
 }
 
 .link::after {
-  content:'...';
+  content:'\2192';
+  text-decoration: underline;
 }
 
 
@@ -74,12 +83,13 @@
   width: 765px;
   height: 608px;
   z-index: 1;
-  max-width: 50%;
+  max-width:50%;
 }
+
 .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color: blue;
+  background-color: #2f80ed;
   top: 64px;
   right: 0;
   position: absolute;
@@ -108,13 +118,9 @@
   vertical-align:top;
 }
 
-.description p {
-  margin-top:0;
-}
-
 .two-columns__brief {
   width: 175px;
-  color: blue;
+  color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -135,7 +141,7 @@
   margin-bottom: 30px;
 }
 
-.digits{
+.digits {
   margin: 100px auto;
   position: relative;
 }
@@ -239,17 +245,153 @@
 }
 
 .feynman__link {
+  text-decoration: none;
   position: absolute;
   top: 50%;
   line-height: 51px;
   font-size: 36px;
   right: 48px;
-  color: black;
+}
+
+.kaufman {
+  padding-bottom: 90px;
+  color: white;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.table_theme_dark
+
+.table__text_theme_dark
+
+
+.triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: -210px;
+  top: 0;
+  animation: rotation 45s linear infinite;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.footer {
+  padding-top:60px;
+  padding-bottom:40px;
+  background-color: #1f1f1f;
+  color:white;
+  min-height:350px;
+}
+
+.footer__columns {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  min-height:350px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.footer__column {
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width:183px;
+  height:35px;
+  left:0;
+  top:0;
+  position: absolute;
+}
+
+.footer__column_content_copyright {
+  flex-basis:711px;
+  flex-shrink:1;
+}
+
+.footer__author {
+  line-height:25px;
+  font-size:18px;
+  margin-bottom:18px;
+  margin-top:18px;
+  bottom:0;
+  left:0;
+  position: absolute;
+}
+
+.footer__social-icons {
+  width:16px;
+  height:16px; 
+  background-size: contain;
+  position: relative;
+}
+
+.footer__column_content-social {
+  margin-bottom:16px;
+  flex-shrink:2;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footer__column_content-info {
+  flex-shrink:1.5;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footer__column-heading {
+  font-weight:bold;
+  margin-bottom:20px;
+  margin-top:0;
+  line-height:30px;
+  font-size:18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  margin-bottom:16px;
+  line-height:30px;
+  font-size:18px;
+  list-style-type:none;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+.footer__social-icons a:hover {
+  color:rgb(224, 157, 157);
+  opacity: 0.5;
+  transition:0.5s linear;
+}
+
+.footer__column-links a:hover {
+  color:rgb(224, 157, 157);
+  opacity: 0.5;
+  transition:0.5s linear;
+}
+
+.footer a {
+  display:block;
 }
 
 div {
-  border: 3px solid red;
+  border: 1px solid red;
 }
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
