@@ -28,7 +28,7 @@
 
 .logo__place_header {
   background-image: url(./images/logo.svg);
-  width: 183x;
+  width: 183px;
   height: 32px;
   position: absolute;
   left: 64px;
@@ -393,7 +393,7 @@
 
 .footer__social-icons {
   width: 16px;
-  height: 16px; 
+  height: 16px;
   margin-right: 10px;
   background-size: contain;
   position: relative;
