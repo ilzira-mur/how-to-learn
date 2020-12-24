@@ -23,7 +23,6 @@
 }
 
 .logo_place_header {
-  background-image: url(./images/logo.svg);
   width: 183px;
   height: 32px;
   position: absolute;
@@ -140,7 +139,7 @@
   background-color: white;
 }
 
-.digits__section-title {
+.section-title {
   margin: 0 auto;
   width: 60%;
   font-size: 60px;
@@ -149,7 +148,7 @@
   text-align: center;
 }
 
-.digits__section-subtitle {
+.section-subtitle {
   margin-top: 20px;
   margin-bottom: 0;
   margin-left: auto;
@@ -221,7 +220,6 @@
   width: 648px;
   margin-left: auto;
   margin-right: auto;
-  
   margin-bottom: 70px;
   text-align: center;
 }
@@ -254,7 +252,7 @@
   padding-bottom: 90px;
 }
 
-.kaufman__section-title_theme_dark {
+.section-title_theme_dark {
   margin-top: 90px;
   margin-bottom: 20px;
   width: 60%;
@@ -268,7 +266,7 @@
   z-index: 2;
 }
 
-.kaufman__section-subtitle_theme_dark {
+.section-subtitle_theme_dark {
   margin-top: 20px;
   margin-bottom: 0;
   width: 60%;
@@ -282,14 +280,14 @@
   z-index: 2;
 }
 
-.kaufman__table_theme_dark {
+.table_theme_dark {
   margin: 0 auto;
   position: relative;
   color: white;
   z-index: 2;
 }
 
-.kaufman__table-cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   text-align: left;
   flex-direction: row;
@@ -299,7 +297,7 @@
   margin-top: 80px;
 }
 
-.kaufman__table-heading_theme_dark {
+.table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -307,7 +305,7 @@
   margin-bottom: 20px;
 }
 
-.kaufman__table-text_theme_dark {
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -341,6 +339,7 @@
   margin-right: auto;
   min-height: 350px;
   display: flex;
+  justify-content: space-between;
 }
 
 .footer__column_content_copyright {
@@ -354,8 +353,6 @@
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
-  margin-top: 0;
-  margin-left: 0;
 }
 
 .footer__author {
@@ -371,16 +368,6 @@
   margin-right: 10px;
   background-size: contain;
   position: relative;
-}
-
-.footer__column_content-social {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.footer__column_content-info {
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .footer__column-heading {
