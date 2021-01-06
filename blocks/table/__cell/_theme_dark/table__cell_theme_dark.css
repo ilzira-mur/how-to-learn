@@ -1,0 +1,9 @@
+.table__cell_theme_dark {
+    width: 200px;
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: top;
+    margin-right: 0;
+    margin-top: 80px;
+}
