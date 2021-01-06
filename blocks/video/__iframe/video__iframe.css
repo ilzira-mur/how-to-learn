@@ -1,0 +1,11 @@
+.video__iframe {
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    bottom: -50px;
+    right: -20px;
+}
+
+.video__iframe:nth-of-type(1) {
+    margin-right: 20px;
+  }
