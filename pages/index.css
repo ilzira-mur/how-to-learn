@@ -24,7 +24,6 @@
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
-@import url(../blocks/video/__iframe-procrastination/video__iframe-procrastination.css);
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__title/feynman__title.css);
@@ -54,6 +53,7 @@
 @import url(../blocks/resourses/resourses.css);
 @import url(../blocks/resourses/__logo-zone/resourses__logo-zone.css);
 @import url(../blocks/resourses/__logo/resourses__logo.css);
+@import url(../blocks/resourses/__link/resourses__link.css);
 @import url(../blocks/list/list.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
